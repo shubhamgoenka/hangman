@@ -26,21 +26,22 @@ class HomeViewController: UIViewController {
         
         view.backgroundColor = UIColor.white
         
-        hangmanLabel = UILabel(frame: CGRect(x: view.frame.width * 0.25, y: view.frame.height * 0.2, width: view.frame.width * 0.5, height: 50))
+        hangmanLabel = UILabel(frame: CGRect(x: view.frame.width * 0.1, y: view.frame.height * 0.125, width: view.frame.width * 0.8, height: 100))
         hangmanLabel.text = "HANGMAN"
         hangmanLabel.textAlignment = .center
         hangmanLabel.textColor = UIColor.blue
-        hangmanLabel.font = UIFont(name: "Avenir-Bold", size: 50)
+        hangmanLabel.font = UIFont(name: "Avenir", size: 40)
         hangmanLabel.adjustsFontSizeToFitWidth = true
         hangmanLabel.numberOfLines = 1
-        hangmanLabel.shadowColor = UIColor.black
+        hangmanLabel.shadowOffset = CGSize(width: 1, height: 1)
+        hangmanLabel.shadowColor = UIColor.lightGray
         
-        hangmanImageView = UIImageView(frame: CGRect(x: view.frame.width * 0.5 - view.frame.height * 0.175 + 75, y: view.frame.height * 0.2 + 150, width: (view.frame.height * 0.35 - 150), height: (view.frame.height * 0.35 - 150)))
+        hangmanImageView = UIImageView(frame: CGRect(x: view.frame.width * 0.5 - view.frame.height * 0.175 + 20, y: view.frame.height * 0.125 + 120, width: (view.frame.height * 0.35 - 40), height: (view.frame.height * 0.35 - 40)))
         hangmanImageView.clipsToBounds = true
         hangmanImageView.contentMode = .scaleAspectFill
-        hangmanImageView.image = #imageLiteral(resourceName: "hangman7")
+        hangmanImageView.image = #imageLiteral(resourceName: "hangman6")
         
-        playButton = UIButton(frame: CGRect(x: view.frame.width * 0.3, y: view.frame.height * 0.55 + 100, width: view.frame.width * 0.4, height: 40))
+        playButton = UIButton(frame: CGRect(x: view.frame.width * 0.3, y: view.frame.height * 0.5 + 110, width: view.frame.width * 0.4, height: 40))
         playButton.addTarget(self, action: #selector(playPressed), for: .touchUpInside)
         playButton.setTitle("New Game", for: .normal)
         playButton.titleLabel?.font = UIFont(name: "Avenir", size: 20)
@@ -48,8 +49,11 @@ class HomeViewController: UIViewController {
         playButton.titleLabel?.adjustsFontSizeToFitWidth = true
         playButton.titleLabel?.numberOfLines = 1
         playButton.clipsToBounds = true
+        playButton.layer.borderColor = UIColor.black.cgColor
+        playButton.layer.borderWidth = 1
+        playButton.layer.cornerRadius = 5
         
-        helpButton = UIButton(frame: CGRect(x: view.frame.width * 0.3, y: view.frame.height * 0.55 + 165, width: view.frame.width * 0.4, height: 40))
+        helpButton = UIButton(frame: CGRect(x: view.frame.width * 0.3, y: view.frame.height * 0.5 + 175, width: view.frame.width * 0.4, height: 40))
         helpButton.addTarget(self, action: #selector(helpPressed), for: .touchUpInside)
         helpButton.setTitle("How To Play", for: .normal)
         helpButton.titleLabel?.font = UIFont(name: "Avenir", size: 20)
@@ -57,6 +61,9 @@ class HomeViewController: UIViewController {
         helpButton.titleLabel?.adjustsFontSizeToFitWidth = true
         helpButton.titleLabel?.numberOfLines = 1
         helpButton.clipsToBounds = true
+        helpButton.layer.borderColor = UIColor.black.cgColor
+        helpButton.layer.borderWidth = 1
+        helpButton.layer.cornerRadius = 5
         
         view.addSubview(hangmanLabel)
         view.addSubview(hangmanImageView)

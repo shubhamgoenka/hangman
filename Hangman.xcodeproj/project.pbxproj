@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		51C483901E66124900CD01E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C4838F1E66124900CD01E4 /* HomeViewController.swift */; };
 		51C483921E6612AC00CD01E4 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C483911E6612AC00CD01E4 /* HelpViewController.swift */; };
+		51C483961E663C6500CD01E4 /* GameHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C483951E663C6500CD01E4 /* GameHeaderView.swift */; };
+		51C483981E6679EE00CD01E4 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C483971E6679EE00CD01E4 /* GuessView.swift */; };
+		51C4839A1E6680FE00CD01E4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C483991E6680FE00CD01E4 /* Game.swift */; };
 		ECC22F431C89177600749E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC22F421C89177600749E58 /* AppDelegate.swift */; };
 		ECC22F481C89177600749E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC22F461C89177600749E58 /* Main.storyboard */; };
 		ECC22F4A1C89177600749E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC22F491C89177600749E58 /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		51C4838F1E66124900CD01E4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		51C483911E6612AC00CD01E4 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		51C483951E663C6500CD01E4 /* GameHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHeaderView.swift; sourceTree = "<group>"; };
+		51C483971E6679EE00CD01E4 /* GuessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
+		51C483991E6680FE00CD01E4 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		ECC22F3F1C89177600749E58 /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC22F421C89177600749E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECC22F471C89177600749E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -155,6 +161,8 @@
 		ECC22F731C8917DC00749E58 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				51C483951E663C6500CD01E4 /* GameHeaderView.swift */,
+				51C483971E6679EE00CD01E4 /* GuessView.swift */,
 				ECC22F461C89177600749E58 /* Main.storyboard */,
 			);
 			name = View;
@@ -164,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				ECC22F7D1C891CF800749E58 /* HangmanPhrases.swift */,
+				51C483991E6680FE00CD01E4 /* Game.swift */,
 				ECC22F7B1C891A6700749E58 /* phrases.plist */,
 			);
 			name = Model;
@@ -308,7 +317,10 @@
 				ECC22F431C89177600749E58 /* AppDelegate.swift in Sources */,
 				ECC22F7E1C891CF800749E58 /* HangmanPhrases.swift in Sources */,
 				51C483901E66124900CD01E4 /* HomeViewController.swift in Sources */,
+				51C483981E6679EE00CD01E4 /* GuessView.swift in Sources */,
 				51C483921E6612AC00CD01E4 /* HelpViewController.swift in Sources */,
+				51C483961E663C6500CD01E4 /* GameHeaderView.swift in Sources */,
+				51C4839A1E6680FE00CD01E4 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
